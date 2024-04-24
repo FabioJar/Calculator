@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background">
+        <h1>Fabio Jardim</h1>
+        <div id="calculator">
+            <table>
+                <h2>Calculator</h2>
+                <p id="result"></p>
+                <tr>
+                    <td><button class="button" onclick="clean()">C</button></td>
+                    <td><button class="button" onclick="backSpace()">CE</button></td>
+                    <td><button class="button" onclick="call('/')">/</button></td>
+                    <td><button class="button" onclick="call('*')">*</button></td>
+                <tr>
+                    <td><button class="button" onclick="call('7')">7</button></td>
+                    <td><button class="button" onclick="call('8')">8</button></td>
+                    <td><button class="button" onclick="call('9')">9</button></td>
+                    <td><button class="button" onclick="call('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="call('4')">4</button></td>
+                    <td><button class="button" onclick="call('5')">5</button></td>
+                    <td><button class="button" onclick="call('6')">6</button></td>
+                    <td><button class="button" onclick="call('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="call('1')">1</button></td>
+                    <td><button class="button" onclick="call('2')">2</button></td>
+                    <td><button class="button" onclick="call('3')">3</button></td>
+                    <td rowspan="2"><button class="button" id="equal" onclick="calc()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="button" id="zero" onclick="call('0')">0</button></td>
+                    <td><button class="button" onclick="call('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
